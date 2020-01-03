@@ -56,25 +56,25 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<!-- Docker -->
-			<plugin>
-				<groupId>com.spotify</groupId>
-				<artifactId>dockerfile-maven-plugin</artifactId>
-				<version>1.4.6</version>
-				<executions>
-					<execution>
-						<id>default</id>
-						<goals>
-							<goal>build</goal>
-							<!-- <goal>push</goal> -->
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<repository>in28min/${project.name}</repository>
-					<tag>${project.version}</tag>
-				</configuration>
-<!--					<skipDockerInfo>true</skipDockerInfo>-->
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>com.spotify</groupId>-->
+<!--				<artifactId>dockerfile-maven-plugin</artifactId>-->
+<!--				<version>1.4.6</version>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>default</id>-->
+<!--						<goals>-->
+<!--							<goal>build</goal>-->
+<!--							&lt;!&ndash; <goal>push</goal> &ndash;&gt;-->
+<!--						</goals>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--				<configuration>-->
+<!--					<repository>arundhwaj/${project.name}</repository>-->
+<!--					<tag>${project.version}</tag>-->
+<!--				</configuration>-->
+<!--&lt;!&ndash;					<skipDockerInfo>true</skipDockerInfo>&ndash;&gt;-->
+<!--			</plugin>-->
 
 		</plugins>
 	</build>
